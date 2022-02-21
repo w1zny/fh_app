@@ -2,8 +2,10 @@ import time
 import school_files as sf
 import course_files as cf
 
-cf.course_file_observer.start()
-sf.school_file_observer.start()
+observers = [cf.course_file_observer, sf.school_file_observer]
+
+for observer in observers:
+    observer.start()
 
 
 try:
@@ -12,7 +14,7 @@ try:
         time.sleep(1)
 except KeyboardInterrupt:
     print("\n\nDONE\n")
-    sf.school_file_observer.stop()
-    cf.course_file_observer.stop()
-sf.school_file_observer.join()
-cf.course_file_observer.join()
+    for observer in observers:
+        observer.stop()
+for observer in observers:
+    observer.join()
