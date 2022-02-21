@@ -3,7 +3,7 @@ import school_files as sf
 import course_files as cf
 
 cf.course_file_observer.start()
-sf.chool_file_observer.start()
+sf.school_file_observer.start()
 
 
 try:
