@@ -7,6 +7,6 @@ main_courses_folder = "/Users/jakub/Downloads"
 courses_folder = "/Users/jakub/Desktop/programming/courses"
 
 # folders to handle
-# sf
+# school files => sf
 sf = ["che", "mat", "cmat", "sjl", "ala", "anj", "arl",
       "obn", "frj", "inf", "pro", "dej", "geg", "bio", "fyz"]
