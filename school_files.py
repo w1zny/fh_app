@@ -31,4 +31,4 @@ school_files_handler = SchoolFilesHandler()
 school_file_observer = Observer()
 
 school_file_observer.schedule(
-    school_files_handler, additions.main_school_folder, recursive=False)
+    school_files_handler, additions.main_school_folder, recursive=True)

@@ -27,4 +27,4 @@ courses_files_handler = CoursesFilesHandler()
 course_file_observer = Observer()
 
 course_file_observer.schedule(
-    courses_files_handler, additions.main_courses_folder, recursive=False)
+    courses_files_handler, additions.main_courses_folder, recursive=True)
